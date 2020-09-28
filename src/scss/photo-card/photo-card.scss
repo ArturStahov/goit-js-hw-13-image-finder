@@ -1,0 +1,40 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.photo-card {
+  max-width: 350px;
+  max-height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+  &:hover .photo-card_stats {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.photo-card_stats {
+  padding: 15px;
+  border-radius: 30px;
+  background-color: $color-stats;
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+}
+
+.photo-card_images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
