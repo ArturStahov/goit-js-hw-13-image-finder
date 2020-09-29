@@ -10,7 +10,7 @@ export class ApiServer {
     }
 
     search(userInput) {
-        this.page = 2;
+        this.page = 1;
         this.userInput = userInput;
         return this.serverConnect();
     }

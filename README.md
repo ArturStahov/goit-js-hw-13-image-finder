@@ -17,3 +17,4 @@
 
 - https://www.npmjs.com/package/lodash.debounce
 - https://www.npmjs.com/package/basiclightbox
+- https://github.com/sciactive/pnotify/blob/master/README.md#getting-started
