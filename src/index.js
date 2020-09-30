@@ -6,7 +6,8 @@ import { error } from '@pnotify/core';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
-const debounce = require('lodash.debounce');
+// const debounce = require('lodash.debounce');
+import { debounce } from 'lodash';
 
 const erorMessage = () => {
   return error({
@@ -63,5 +64,5 @@ const handlerImageView = event => {
 };
 
 refs.buttonLoadMore.addEventListener('click', handlerLoadNextPage);
-refs.inputSearch.addEventListener('input', debounce(handlerInputUser, 1000));
+refs.inputSearch.addEventListener('input', debounce(handlerInputUser, 500));
 refs.outputList.addEventListener('click', handlerImageView);
